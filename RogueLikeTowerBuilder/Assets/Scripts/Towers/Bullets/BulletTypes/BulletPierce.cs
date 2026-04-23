@@ -13,6 +13,5 @@ public class BulletPierce : MonoBehaviour, IBulletEffect, IDestroyable
         {
             Destroy(gameObject);
         }
-
     }
 }

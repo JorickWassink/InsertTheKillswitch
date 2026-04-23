@@ -3,7 +3,7 @@ using UnityEngine;
 public abstract class BaseShoot : MonoBehaviour, IShootable
 {
     public float damage = 1;
-    protected float bulletSpeed = 5;
+    public float bulletSpeed = 5;
     public virtual void Shoot(Vector3 target)
     {
         GameObject current = Instantiate(GetComponent<TowerBase>().bullet, transform.position, Quaternion.identity);
@@ -24,21 +24,16 @@ public abstract class BaseShoot : MonoBehaviour, IShootable
         {
             case bulletNames.burn:
                 _bullet.AddComponent<BulletBurn>();
-                // add the right bulletcomponent script that uses the interface
                 break;
             case bulletNames.tazer:
                 _bullet.AddComponent<BulletTazer>();
-                // add the right bulletcomponent script that uses the interface
                 break;
             case bulletNames.piercing:
                 _bullet.AddComponent<BulletPierce>();
-                // add the right bulletcomponent script that uses the interface
                 break;
             case bulletNames.slow:
                 _bullet.AddComponent<BulletSlow>();
-                // add the right bulletcomponent script that uses the interface
                 break;
         }
-        //SET ALL BULLET INFO LIKE CHAINING AND BURN DAMAGE
     }
 }

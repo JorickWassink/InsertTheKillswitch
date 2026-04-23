@@ -13,13 +13,9 @@ public enum rarities
 public enum shootingNames
 {
     doubleShot,
-    splitShot,
     backShot,
-    randomTarget,
-    quadShot,
-    wildSpread,
     machineGun,
-    circleShot
+    standard
 }
 
 public enum bulletNames
@@ -38,11 +34,8 @@ public class PerkManager : MonoBehaviour
         { shootingNames.doubleShot, rarities.common },
         { shootingNames.machineGun, rarities.common },
         { shootingNames.backShot, rarities.common },
-        { shootingNames.randomTarget, rarities.common },
-        //{ shootingNames.quadShot, rarities.rare },
-        //{ shootingNames.wildSpread, rarities.rare },
-        //{ shootingNames.splitShot, rarities.rare },
-        //{ shootingNames.circleShot, rarities.epic }
+        { shootingNames.standard, rarities.common },
+
     };
 
     Dictionary<bulletNames, rarities> bulletRarity = new()
@@ -50,11 +43,7 @@ public class PerkManager : MonoBehaviour
         { bulletNames.burn, rarities.common },
         { bulletNames.tazer, rarities.common },
         { bulletNames.piercing, rarities.common },
-        { bulletNames.slow, rarities.common },
-        //{ shootingNames.quadShot, rarities.rare },
-        //{ shootingNames.wildSpread, rarities.rare },
-        //{ shootingNames.splitShot, rarities.rare },
-        //{ shootingNames.circleShot, rarities.epic }
+        { bulletNames.slow, rarities.common }
     };
 
     void Start()
@@ -64,13 +53,12 @@ public class PerkManager : MonoBehaviour
         var shootingKeys = new List<shootingNames>(shootingRarity.Keys);
         shootingNames currentShooting = shootingKeys[randomNum];
 
-        //SetShootingPerk(currentShooting);
+        SetShootingPerk(currentShooting);
 
 
 
 
         randomNum = Random.Range(0, bulletRarity.Count);
-        randomNum = 2; // test line guh
 
 
         var bulletKeys = new List<bulletNames>(bulletRarity.Keys);
@@ -94,8 +82,8 @@ public class PerkManager : MonoBehaviour
             case shootingNames.backShot:
                 gameObject.AddComponent<BackShooting>();
                 break;
-            case shootingNames.randomTarget:
-                gameObject.AddComponent<RandomTargetShooting>();
+            case shootingNames.standard:
+                gameObject.AddComponent<StandardShoot>();
                 break;
             default:
                 print("SOMETHING went wrong and i dont know what PLEASE help me");

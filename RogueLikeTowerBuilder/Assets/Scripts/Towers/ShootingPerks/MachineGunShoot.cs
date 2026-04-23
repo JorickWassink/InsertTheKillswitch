@@ -1,11 +1,10 @@
 using UnityEngine;
 
-public class MachineGunShoot : TowerBase
+public class MachineGunShoot : BaseShoot
 {
-    //protected override void Start()
-    //{
-    //    attackSpeed = .1f;
-    //    damage = .1f;
-    //    base.Start();
-    //}
+    void Start()
+    {
+        GetComponent<TowerBase>().attackSpeed = .1f;
+        damage = .1f;
+    }
 }

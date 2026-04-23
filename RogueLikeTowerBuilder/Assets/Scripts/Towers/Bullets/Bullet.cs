@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
 
 
         gameObject.TryGetComponent<IDestroyable>(out destroyable);
-        destroyable.DestroyBehavior(collision);
+        if(destroyable != null) destroyable.DestroyBehavior(collision);
 
 
     }

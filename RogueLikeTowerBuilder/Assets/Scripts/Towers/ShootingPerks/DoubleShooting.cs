@@ -25,6 +25,8 @@ public class DoubleShooting : BaseShoot
         //second bullet
         GameObject currentTwo = Instantiate(GetComponent<TowerBase>().bullet, new Vector2(transform.position.x - .1f, transform.position.y - .1f), Quaternion.identity);
 
+        SetBulletInfo(currentTwo);
+
         currentTwo.GetComponent<Bullet>().damage = damage;
 
         Rigidbody2D rbTwo = currentTwo.GetComponent<Rigidbody2D>();
