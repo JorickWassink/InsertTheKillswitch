@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BulletSlow : MonoBehaviour ,IBulletEffect, IDestroyable
+public class BulletSlow : MonoBehaviour ,IBulletEffect
 {
     void IBulletEffect.ApplyEffect(Enemy enemy, float damage)
     {
@@ -11,9 +11,6 @@ public class BulletSlow : MonoBehaviour ,IBulletEffect, IDestroyable
     
 
 
-    void IDestroyable.DestroyBehavior(Collider2D col)
-    {
-        Destroy(gameObject);
-    }
+
 
 }

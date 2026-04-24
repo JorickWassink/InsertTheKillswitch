@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BulletBurn : MonoBehaviour, IBulletEffect, IDestroyable
+public class BulletBurn : MonoBehaviour, IBulletEffect
 {
     void IBulletEffect.ApplyEffect(Enemy enemy, float damage)
     { 
@@ -9,8 +9,5 @@ public class BulletBurn : MonoBehaviour, IBulletEffect, IDestroyable
         manager.CheckDOTEffect(enemy, DOT.Burn, damage, 6, .5f);
     }
 
-    void IDestroyable.DestroyBehavior(Collider2D col)
-    {
-        Destroy(gameObject);
-    }
+
 }
