@@ -3606,7 +3606,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753530112}
-  - component: {fileID: 1753530111}
   m_Layer: 0
   m_Name: Jokers
   m_TagString: Untagged
@@ -3614,19 +3613,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1753530111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753530110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac1e95a9a3a97346b4f9ed2f57d5770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AddBulletPerkJoker
-  perk: 0
 --- !u!4 &1753530112
 Transform:
   m_ObjectHideFlags: 0
