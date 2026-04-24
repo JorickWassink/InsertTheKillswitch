@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class BaseTarget : MonoBehaviour, IGetTarget
@@ -9,7 +10,7 @@ public abstract class BaseTarget : MonoBehaviour, IGetTarget
         float targetDistance = Mathf.Infinity;
         Vector3 target = Vector3.zero;
 
-        foreach (var hit in hits)
+        foreach (var hit in targets)
         {
             Enemy enemy = hit.GetComponent<Enemy>();
             if (enemy == null) continue;
@@ -36,7 +37,9 @@ public abstract class BaseTarget : MonoBehaviour, IGetTarget
 
             Vector3 target = ((IGetTarget)this).GetTarget(hits);
             if (target != Vector3.zero)
+            {
                 GetComponent<IShootable>().Shoot(target);
+            }
 
             yield return new WaitForSeconds(GetComponent<TowerBase>().attackSpeed);
         }

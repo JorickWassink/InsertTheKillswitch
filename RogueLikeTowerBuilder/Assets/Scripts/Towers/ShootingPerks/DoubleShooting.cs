@@ -10,7 +10,6 @@ public class DoubleShooting : BaseShoot
 
     public override void Shoot(Vector3 target)
     {
-        print("test");
         GameObject current = Instantiate(GetComponent<TowerBase>().bullet, new Vector2(transform.position.x + .1f, transform.position.y + .1f), Quaternion.identity);
 
         SetBulletInfo(current);

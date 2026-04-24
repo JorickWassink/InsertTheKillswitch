@@ -26,6 +26,14 @@ public enum bulletNames
     slow
 }
 
+public enum targetNames
+{
+    random,
+    closest,
+    first,
+    strongest
+}
+
 
 public class PerkManager : MonoBehaviour
 {
@@ -46,25 +54,37 @@ public class PerkManager : MonoBehaviour
         { bulletNames.slow, rarities.common }
     };
 
+    Dictionary<targetNames, rarities> targetRarity = new()
+    {
+        { targetNames.random, rarities.common },
+        { targetNames.closest, rarities.common },
+        { targetNames.first, rarities.common },
+        { targetNames.strongest, rarities.common }
+    };
+
     void Start()
     {
-        //do all the random stuff and assigning scripts to the object stuff
+        //start of setting shooting perk
         int randomNum = Random.Range(0, shootingRarity.Count);
-        var shootingKeys = new List<shootingNames>(shootingRarity.Keys);
-        shootingNames currentShooting = shootingKeys[randomNum];
 
+        List<shootingNames> shootingKeys = new List<shootingNames>(shootingRarity.Keys);
+        shootingNames currentShooting = shootingKeys[randomNum];
         SetShootingPerk(currentShooting);
 
-
-
-
+        //start of setting bullet perk
         randomNum = Random.Range(0, bulletRarity.Count);
 
-
-        var bulletKeys = new List<bulletNames>(bulletRarity.Keys);
+        List<bulletNames> bulletKeys = new List<bulletNames>(bulletRarity.Keys);
         bulletNames currentBullet = bulletKeys[randomNum];
 
         gameObject.GetComponent<BulletEnumHolder>().bullet = currentBullet;
+
+        //start of setting targeting perk
+        randomNum = Random.Range(0,targetRarity.Count);
+
+        List<targetNames> targetKeys = new List<targetNames>(targetRarity.Keys);
+        targetNames currentTarget = targetKeys[randomNum];
+        SetTargetPerk(currentTarget);
 
         gameObject.GetComponent<PerkManager>().enabled = false;
     }
@@ -84,6 +104,28 @@ public class PerkManager : MonoBehaviour
                 break;
             case shootingNames.standard:
                 gameObject.AddComponent<StandardShoot>();
+                break;
+            default:
+                print("SOMETHING went wrong and i dont know what PLEASE help me");
+                break;
+        }
+    }
+
+    void SetTargetPerk(targetNames targetNames)
+    {
+        switch (targetNames)
+        {
+            case targetNames.random:
+                gameObject.AddComponent<RandomTarget>();
+                break;
+            case targetNames.first:
+                gameObject.AddComponent<FirstTarget>();
+                break;
+            case targetNames.closest:
+                gameObject.AddComponent<ClosestTarget>();
+                break;
+            case targetNames.strongest:
+                gameObject.AddComponent<StrongestTarget>();
                 break;
             default:
                 print("SOMETHING went wrong and i dont know what PLEASE help me");

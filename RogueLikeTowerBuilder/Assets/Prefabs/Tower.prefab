@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: -3066290527569250849}
   - component: {fileID: -2323115886405392712}
   - component: {fileID: 4553449350035840565}
-  - component: {fileID: 6025548749665822639}
-  - component: {fileID: 7042049700884414766}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -137,30 +135,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletEnumHolder
   bullet: 0
---- !u!114 &6025548749665822639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2846227873956561075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7de72aa27eaea824ea5b07109d0d29d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StrongestTarget
-  hits: []
---- !u!114 &7042049700884414766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2846227873956561075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efb7f1f1eaa79ca41ac11fb0a5b22012, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StandardShoot
-  damage: 1
-  bulletSpeed: 5

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class TowerBase : MonoBehaviour
@@ -9,19 +10,19 @@ public class TowerBase : MonoBehaviour
 
     [Header("References")]
     public GameObject bullet;
+    IShootable shootable;
+    IGetTarget getTarget;
 
     public Collider2D[] hits;
+    Coroutine checkTargets;
 
     protected virtual void Start()
     {
         bullet = BulletHolder.bulletInstance;
+        StartCoroutine(GetInterfaces());
 
-        IGetTarget getTarget = GetComponent<IGetTarget>();
-        IShootable shootable = GetComponent<IShootable>();
-
-        StartCoroutine(getTarget.CheckTargets(range));
+        
     }
-
 
     public void RotateTowards(Vector3 targetPos)
     {
@@ -31,10 +32,19 @@ public class TowerBase : MonoBehaviour
     }
 
 
-
     protected virtual void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    IEnumerator GetInterfaces()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2);
+            getTarget = GetComponent<IGetTarget>();
+            if(getTarget != null && checkTargets == null) checkTargets = StartCoroutine(getTarget.CheckTargets(range));
+        }
     }
 }
