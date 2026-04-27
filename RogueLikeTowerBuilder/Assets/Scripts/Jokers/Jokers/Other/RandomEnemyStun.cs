@@ -16,7 +16,7 @@ public class RandomEnemyStun : MonoBehaviour
             Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
             if (enemies.Length > 0)
             {
-                int randomIndex = UnityEngine.Random.Range(0, enemies.Length);
+                int randomIndex = Random.Range(0, enemies.Length);
                 enemies[randomIndex].Stun(1);
             }
             yield return new WaitForSeconds(2);
