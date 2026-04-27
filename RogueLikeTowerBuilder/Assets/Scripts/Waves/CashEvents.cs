@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
 
-public class CashEvents : MonoBehaviour
+public static class CashEvents
 {
-    public static CashEvents instance { get; private set; }
-
-    public Action<int> AddCashEvent;
-    public Action<int> RemoveCashEvent;
+    public static Action<int> AddCashEvent;
+    public static Action<int> RemoveCashEvent;
 }

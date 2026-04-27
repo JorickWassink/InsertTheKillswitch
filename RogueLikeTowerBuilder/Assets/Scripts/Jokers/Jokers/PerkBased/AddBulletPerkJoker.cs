@@ -11,7 +11,7 @@ public class AddBulletPerkJoker : MonoBehaviour
     public RiggablePerks perk;
     void Start()
     {
-        JokerEvents.instance.OnBulletSpawn += AddBulletPerk;
+        JokerEvents.OnBulletSpawn += AddBulletPerk;
     }
 
     void AddBulletPerk(GameObject bullet)

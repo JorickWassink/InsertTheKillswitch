@@ -212,12 +212,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8362891c495b4cc4c8b03c13a8929c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hp: 10000
+  hp: 1
   speed: 1
-  cost: 1
+  value: 1
   bulletTarget: {fileID: 2505201877782405664}
   textHolder: {fileID: 7463899023979926874, guid: e18a26d3a444a2f44a9f2bb0799a7b1e, type: 3}
   textPos: {fileID: 9141138923128410376}
+  stunCooldown: 0
 --- !u!114 &247780391628544221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74752254aa698448ba7e154547cc6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PathFinding
-  stunCooldown: 0
 --- !u!61 &8515634568244116512
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class PlaceTower : MonoBehaviour
 
     CashManager cash;
 
+    int towerCost = 5;
+
     private void Start()
     {
         InputManager.PlaceTower += Place;
@@ -24,9 +26,9 @@ public class PlaceTower : MonoBehaviour
         if (hit != null && hit.isTrigger && hit.TryGetComponent<Road>(out _))
             return;
 
-        if (cash.CheckCash(5))
+        if (cash.CheckCash(towerCost))
         {
-            cash.RemoveCash(5);
+            CashEvents.RemoveCashEvent?.Invoke(towerCost);
             Instantiate(tower, pos, Quaternion.identity, towerParent.transform);
             this.enabled = false;
             indicator.SetActive(false);

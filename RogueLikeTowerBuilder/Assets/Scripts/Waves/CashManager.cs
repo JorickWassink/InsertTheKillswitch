@@ -8,6 +8,9 @@ public class CashManager : MonoBehaviour
 
     private void Start()
     {
+        CashEvents.AddCashEvent += AddCash;
+        CashEvents.RemoveCashEvent += RemoveCash;
+
         cashNumber.text = money.ToString();
     }
     public void AddCash(int _cash)

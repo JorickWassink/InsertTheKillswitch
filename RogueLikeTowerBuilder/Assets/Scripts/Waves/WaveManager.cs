@@ -21,6 +21,7 @@ public class WaveManager : MonoBehaviour
         Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
         if (enemies.Length == 0)
         {
+            if(currentWave != 1) JokerEvents.OnWaveEnd?.Invoke();
             StartWave();
         }
     }
@@ -38,10 +39,10 @@ public class WaveManager : MonoBehaviour
             do
             {
                 int randomNum = UnityEngine.Random.Range(0, enemies.Count);
-                if (enemies[randomNum].GetComponent<Enemy>().cost <= currency)
+                if (enemies[randomNum].GetComponent<Enemy>().value <= currency)
                 {
                     spawnable = enemies[randomNum];
-                    currency -= enemies[randomNum].GetComponent<Enemy>().cost;
+                    currency -= enemies[randomNum].GetComponent<Enemy>().value;
                     found = true;
                 }
 

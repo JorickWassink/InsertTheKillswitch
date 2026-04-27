@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour, IDamagable, ISlowable
 {
     public float hp = 5;
     public float speed = 1;
-    public int cost = 1;
+    public int value = 1;
     public GameObject bulletTarget;
 
     [SerializeField] GameObject textHolder;
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour, IDamagable, ISlowable
 
         if (hp <= 0)
         {
-            cash.AddCash(1);
+            CashEvents.AddCashEvent?.Invoke(value);
             Destroy(gameObject);
         }
     }

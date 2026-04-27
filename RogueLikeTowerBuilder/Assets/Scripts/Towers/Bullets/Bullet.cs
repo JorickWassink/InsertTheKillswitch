@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     IDestroyable destroyable = null;
     private void Start()
     {
-        JokerEvents.instance.OnBulletSpawn?.Invoke(gameObject);
+        JokerEvents.OnBulletSpawn?.Invoke(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
