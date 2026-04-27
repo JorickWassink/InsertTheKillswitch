@@ -189,13 +189,14 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 10.479395, y: -5.0990663}
-  - {x: -10.743766, y: -5.1337433}
-  - {x: 10.492983, y: -5.116394}
-  - {x: 10.595466, y: 5.1291437}
-  - {x: -10.761198, y: 5.1553316}
-  - {x: -10.736991, y: -5.099595}
-  - {x: -10.788166, y: 5.1533837}
+  - {x: 10.606815, y: -6.0051622}
+  - {x: -10.765002, y: -5.997366}
+  - {x: -10.77916, y: -6.0539975}
+  - {x: 10.669954, y: -6.0224905}
+  - {x: 10.6645355, y: 12.25326}
+  - {x: -10.807761, y: 12.285803}
+  - {x: -10.765201, y: -5.996834}
+  - {x: -10.788166, y: 5.1594906}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -237,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 20764432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.522201, y: 1.91, z: 0}
+  m_LocalPosition: {x: 10.522201, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -872,7 +873,7 @@ Transform:
   m_GameObject: {fileID: 317724892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -941,7 +942,7 @@ Transform:
   m_GameObject: {fileID: 353705141}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.296871, y: -3.16495, z: 0}
+  m_LocalPosition: {x: 22.296871, y: -4.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2650,7 +2651,7 @@ Transform:
   m_GameObject: {fileID: 1432173278}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.63, y: -1.36, z: 0}
+  m_LocalPosition: {x: 26.63, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3638,9 +3639,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753530110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2078102491ba5a34da86388b87bbc09a, type: 3}
+  m_Script: {fileID: 11500000, guid: caa62b8bcfea8c540827c9d785568687, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandomEnemyStun
+  m_EditorClassIdentifier: Assembly-CSharp::BulletRainJoker
 --- !u!1 &1773418798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,8 +3941,8 @@ Transform:
   m_GameObject: {fileID: 1963393286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.808, y: -2.4887, z: 0}
-  m_LocalScale: {x: 20.655878, y: 10.017411, z: 1}
+  m_LocalPosition: {x: 21.7173, y: -2.424, z: 0}
+  m_LocalScale: {x: 21.718067, y: 12.477867, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2131819453}

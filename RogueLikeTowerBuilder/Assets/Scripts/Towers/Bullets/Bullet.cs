@@ -13,8 +13,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-
         if (collision.TryGetComponent<Bullet>(out Bullet bullet) || collision.TryGetComponent<BaseManager>(out BaseManager manager) || collision.TryGetComponent<Road>(out Road road))
         {
             return;
@@ -24,6 +22,7 @@ public class Bullet : MonoBehaviour
 
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
+            JokerEvents.OnEnemyHit?.Invoke(gameObject);
             if (collision.TryGetComponent<IDamagable>(out IDamagable damagable))
             {
                 damagable.TakeDamage(damage,Color.white);
