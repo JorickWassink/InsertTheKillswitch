@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: c9503f3014714384fb2ba917cf49a346
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2540309664738428402
+    second: TowerIconsSheet_0
+  - first:
+      213: 4127729497554450564
+    second: TowerIconsSheet_1
+  - first:
+      213: 3536322609088208409
+    second: TowerIconsSheet_2
+  - first:
+      213: -1878120109566751487
+    second: TowerIconsSheet_3
+  - first:
+      213: -5392444410315157970
+    second: TowerIconsSheet_4
+  - first:
+      213: 3346974646569441440
+    second: TowerIconsSheet_5
+  - first:
+      213: 3234407593912672367
+    second: TowerIconsSheet_6
+  - first:
+      213: -5793569440704068278
+    second: TowerIconsSheet_7
+  - first:
+      213: -6962594323869453938
+    second: TowerIconsSheet_8
+  - first:
+      213: 3880596827534506395
+    second: TowerIconsSheet_9
+  - first:
+      213: 1013227722408663853
+    second: TowerIconsSheet_10
+  - first:
+      213: -8817848301367891756
+    second: TowerIconsSheet_11
+  - first:
+      213: -3315557748851647874
+    second: TowerIconsSheet_12
+  - first:
+      213: 4820844136485980046
+    second: TowerIconsSheet_13
+  - first:
+      213: 6066113706514267194
+    second: TowerIconsSheet_14
+  - first:
+      213: 4218800696500507288
+    second: TowerIconsSheet_15
+  - first:
+      213: -8480101285607570161
+    second: TowerIconsSheet_16
+  - first:
+      213: -9138753493396821646
+    second: TowerIconsSheet_17
+  - first:
+      213: 7126735089934510841
+    second: TowerIconsSheet_18
+  - first:
+      213: -5681625286294512347
+    second: TowerIconsSheet_19
+  - first:
+      213: 4213070900481929567
+    second: TowerIconsSheet_20
+  - first:
+      213: 121522867987100190
+    second: TowerIconsSheet_21
+  - first:
+      213: 414857950797369579
+    second: TowerIconsSheet_22
+  - first:
+      213: 2633822638310533877
+    second: TowerIconsSheet_23
+  - first:
+      213: -1806442670690833751
+    second: TowerIconsSheet_24
+  - first:
+      213: -3324762460106724618
+    second: TowerIconsSheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TowerIconsSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5c9325e2ef04320800000000000000
+      internalID: 2540309664738428402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 545
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48872aebb14a84930800000000000000
+      internalID: 4127729497554450564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 545
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e92ed3daa831130800000000000000
+      internalID: 3536322609088208409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 545
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d81c706b39fe5e0800000000000000
+      internalID: -1878120109566751487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ecf1411603a25b0800000000000000
+      internalID: -5392444410315157970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 436
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8920145b7d27e20800000000000000
+      internalID: 3346974646569441440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 436
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60adfde19ce2ec20800000000000000
+      internalID: 3234407593912672367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_7
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 436
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4586411a4b199fa0800000000000000
+      internalID: -5793569440704068278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e813c921a55ef5f90800000000000000
+      internalID: -6962594323869453938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_9
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 327
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99b3bd1146aad530800000000000000
+      internalID: 3880596827534506395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 327
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b1fb6ce35bf0e00800000000000000
+      internalID: 1013227722408663853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 327
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d86fa950b5b0a580800000000000000
+      internalID: -8817848301367891756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a57634bc5ccf1d0800000000000000
+      internalID: -3315557748851647874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_13
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 218
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8785c0433417e240800000000000000
+      internalID: 4820844136485980046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 218
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c39e3c64a2f2450800000000000000
+      internalID: 6066113706514267194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 218
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892551d91e03c8a30800000000000000
+      internalID: 4218800696500507288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05070c6fc0a05a80800000000000000
+      internalID: -8480101285607570161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_17
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 109
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279e830fd10ac2180800000000000000
+      internalID: -9138753493396821646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 109
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9faabd32ecf37e260800000000000000
+      internalID: 7126735089934510841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 109
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dd98797efc621b0800000000000000
+      internalID: -5681625286294512347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51b2c489a5d77a30800000000000000
+      internalID: 4213070900481929567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_21
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e123572976cbfa100800000000000000
+      internalID: 121522867987100190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be01685bb1fd1c500800000000000000
+      internalID: 414857950797369579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerIconsSheet_23
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5faa1e52cb73d8420800000000000000
+      internalID: 2633822638310533877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 038e45e05eb74aa44863a28f893ba69c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":6.0},"gridSpriteSize":{"x":109.0,"y":109.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TowerIconsSheet_0: 2540309664738428402
+      TowerIconsSheet_1: 4127729497554450564
+      TowerIconsSheet_10: 1013227722408663853
+      TowerIconsSheet_11: -8817848301367891756
+      TowerIconsSheet_12: -3315557748851647874
+      TowerIconsSheet_13: 4820844136485980046
+      TowerIconsSheet_14: 6066113706514267194
+      TowerIconsSheet_15: 4218800696500507288
+      TowerIconsSheet_16: -8480101285607570161
+      TowerIconsSheet_17: -9138753493396821646
+      TowerIconsSheet_18: 7126735089934510841
+      TowerIconsSheet_19: -5681625286294512347
+      TowerIconsSheet_2: 3536322609088208409
+      TowerIconsSheet_20: 4213070900481929567
+      TowerIconsSheet_21: 121522867987100190
+      TowerIconsSheet_22: 414857950797369579
+      TowerIconsSheet_23: 2633822638310533877
+      TowerIconsSheet_3: -1878120109566751487
+      TowerIconsSheet_4: -5392444410315157970
+      TowerIconsSheet_5: 3346974646569441440
+      TowerIconsSheet_6: 3234407593912672367
+      TowerIconsSheet_7: -5793569440704068278
+      TowerIconsSheet_8: -6962594323869453938
+      TowerIconsSheet_9: 3880596827534506395
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

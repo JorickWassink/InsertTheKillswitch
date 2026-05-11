@@ -16,19 +16,26 @@ public class TowerBase : MonoBehaviour
     public Collider2D[] hits;
     Coroutine checkTargets;
 
+    public Transform arrowIcon;
+    public float orbitRadius = 1.2f;
+
     protected virtual void Start()
     {
         bullet = BulletHolder.bulletInstance;
         StartCoroutine(GetInterfaces());
 
-        
+        arrowIcon = GetComponentInChildren<TowerIndicator>().gameObject.transform;
     }
+
+    
 
     public void RotateTowards(Vector3 targetPos)
     {
-        Vector2 direction = (targetPos - transform.position).normalized;
+        targetPos.x -= 0.5f;
+        Vector2 direction = ((Vector2)targetPos - (Vector2)transform.position).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        arrowIcon.position = (Vector2)transform.position + direction * orbitRadius;
+        arrowIcon.rotation = Quaternion.Euler(0, 0, angle - 135f);
     }
 
 
