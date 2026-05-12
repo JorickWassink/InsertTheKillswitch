@@ -110,12 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8362891c495b4cc4c8b03c13a8929c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hp: 3
+  hp: 10
   speed: 0.5
-  cost: 4
+  value: 3
   bulletTarget: {fileID: 2505201877782405664}
   textHolder: {fileID: 7463899023979926874, guid: e18a26d3a444a2f44a9f2bb0799a7b1e, type: 3}
   textPos: {fileID: 9181502158553183138}
+  stunCooldown: 0
 --- !u!114 &247780391628544221
 MonoBehaviour:
   m_ObjectHideFlags: 0
