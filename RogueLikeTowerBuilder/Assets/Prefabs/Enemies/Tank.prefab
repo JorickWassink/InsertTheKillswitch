@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8362891c495b4cc4c8b03c13a8929c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hp: 10
+  hp: 6
   speed: 0.5
   value: 3
   bulletTarget: {fileID: 2505201877782405664}

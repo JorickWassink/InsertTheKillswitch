@@ -1,15 +1,15 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class StoreManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public List<Joker> jokers = new List<Joker>();
+    private void Start()
     {
-        
+        Initialize();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Initialize()
     {
         
     }

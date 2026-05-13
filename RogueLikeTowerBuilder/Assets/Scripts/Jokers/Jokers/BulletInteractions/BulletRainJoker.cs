@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BulletRainJoker : MonoBehaviour
+public class BulletRainJoker : MonoBehaviour, IJoker
 {
     void Start()
     {

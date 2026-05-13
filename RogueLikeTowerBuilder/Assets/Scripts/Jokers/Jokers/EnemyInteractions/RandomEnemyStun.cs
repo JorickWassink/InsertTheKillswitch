@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class RandomEnemyStun : MonoBehaviour
+public class RandomEnemyStun : MonoBehaviour, IJoker
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

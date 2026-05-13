@@ -6,7 +6,7 @@ public enum RiggablePerks
     Tazer
 }
 
-public class AddBulletPerkJoker : MonoBehaviour
+public class AddBulletPerkJoker : MonoBehaviour, IJoker
 {
     public RiggablePerks perk;
     void Start()
