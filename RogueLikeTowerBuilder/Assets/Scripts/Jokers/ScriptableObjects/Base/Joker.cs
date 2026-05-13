@@ -11,6 +11,7 @@ public class Joker : ScriptableObject
 
     public int price = 5;
 
-    public JokerEnum jokerEnum;
+    [SerializeReference]
+    public IJoker joker;
 
 }
