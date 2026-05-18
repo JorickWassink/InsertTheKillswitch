@@ -11,7 +11,7 @@ public class Joker : ScriptableObject
 
     public int price = 5;
 
-    [SerializeReference]
+    [SerializeReference, SubclassSelector]
     public IJoker joker;
 
 }
