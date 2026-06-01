@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: AddSlow
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 4
-  jokerName: Goop Jr.
-  sprite: {fileID: 0}
+  jokerName: Goop_Jr
+  sprite: {fileID: 1482950818211161169, guid: 2d2c5f6f08ae6e24890ae4462ef50b8c, type: 3}
   price: 5
-  jokerEnum: 4
+  joker:
+    rid: 3166812955722383432
+  references:
+    version: 2
+    RefIds:
+    - rid: 3166812955722383432
+      type: {class: AddSlowJoker, ns: , asm: Assembly-CSharp}
+      data: 

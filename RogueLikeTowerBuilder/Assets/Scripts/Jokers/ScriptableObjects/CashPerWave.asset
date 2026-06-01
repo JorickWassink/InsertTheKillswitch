@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: CashPerWave
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 0
-  jokerName: 404
-  sprite: {fileID: 0}
+  jokerName: Lemonade_Stand
+  sprite: {fileID: 8868729072188591806, guid: 485b30fd67a032d4dbde89e8c815c2b7, type: 3}
   price: 5
-  jokerEnum: 0
+  joker:
+    rid: 3166812955722383430
+  references:
+    version: 2
+    RefIds:
+    - rid: 3166812955722383430
+      type: {class: CashPerWaveJoker, ns: , asm: Assembly-CSharp}
+      data: 

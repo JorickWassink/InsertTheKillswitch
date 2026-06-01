@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: AddTazer
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 3
-  jokerName: Queen 95
-  sprite: {fileID: 0}
+  jokerName: Queen_95
+  sprite: {fileID: -3070825931381038176, guid: d49f09cd78b106e46b92b07ff785d8e0, type: 3}
   price: 5
-  jokerEnum: 3
+  joker:
+    rid: 3166812955722383433
+  references:
+    version: 2
+    RefIds:
+    - rid: 3166812955722383433
+      type: {class: AddTazerJoker, ns: , asm: Assembly-CSharp}
+      data: 

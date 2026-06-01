@@ -1,19 +1,21 @@
 using UnityEngine;
 using System.Collections;
 
-public class RandomEnemyStun : MonoBehaviour, IJoker
+[System.Serializable]
+public class RandomEnemyStun : IJoker
 {
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Initialize(MonoBehaviour owner)
     {
-        StartCoroutine(StunRandomEnemy());
+        owner.StartCoroutine(StunRandomEnemy());
     }
 
     IEnumerator StunRandomEnemy()
     {
         while (true)
         {
-            Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+            Enemy[] enemies = Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None);
             if (enemies.Length > 0)
             {
                 int randomIndex = Random.Range(0, enemies.Length);

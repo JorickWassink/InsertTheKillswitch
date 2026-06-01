@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 2
   jokerName: (In)Flammable
-  sprite: {fileID: 0}
+  sprite: {fileID: 5597117985695365778, guid: 630a2128588291b4e8cbd204b7dd1c33, type: 3}
   price: 5
-  jokerEnum: 2
+  joker:
+    rid: 3166812955722383431
+  references:
+    version: 2
+    RefIds:
+    - rid: 3166812955722383431
+      type: {class: AddBurnJoker, ns: , asm: Assembly-CSharp}
+      data: 

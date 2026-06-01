@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Joker", menuName = "Scriptable Objects/Joker")]
 public class Joker : ScriptableObject

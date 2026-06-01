@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: BulletRain
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 1
-  jokerName: The rain currently known as purple
-  sprite: {fileID: 0}
+  jokerName: The_rain_currently_known_as_purple
+  sprite: {fileID: -6830152201372448578, guid: 3cc23b6cd0df9d846b329ce68bad73b1, type: 3}
   price: 5
-  jokerEnum: 1
+  joker:
+    rid: 3166812955722383429
+  references:
+    version: 2
+    RefIds:
+    - rid: 3166812955722383429
+      type: {class: BulletRainJoker, ns: , asm: Assembly-CSharp}
+      data: 
