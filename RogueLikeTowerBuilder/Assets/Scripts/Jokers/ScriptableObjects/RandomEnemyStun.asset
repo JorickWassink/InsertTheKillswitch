@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ede2e562c5dc7dd4986a5ae70722a073, type: 3}
-  m_Name: BulletRain
+  m_Name: RandomEnemyStun
   m_EditorClassIdentifier: Assembly-CSharp::Joker
-  id: 1
-  jokerName: The_rain_currently_known_as_purple
-  sprite: {fileID: -6830152201372448578, guid: 3cc23b6cd0df9d846b329ce68bad73b1, type: 3}
+  id: 5
+  jokerName: Stop_Sign
+  sprite: {fileID: -8261462604863340279, guid: 8872521df6f6e0548a3cefdaa04c9bbf, type: 3}
   price: 5
-  joker: 1
+  joker: 5

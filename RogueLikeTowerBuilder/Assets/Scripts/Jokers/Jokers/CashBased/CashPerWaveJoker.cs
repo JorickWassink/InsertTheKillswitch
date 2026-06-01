@@ -1,14 +1,14 @@
 using UnityEngine;
 
-[System.Serializable]
-public class CashPerWaveJoker : IJoker
+
+public class CashPerWaveJoker : MonoBehaviour, IJoker
 {
     int cashPerWave = 5;
-    public void Initialize(MonoBehaviour owner)
+    private void Start()
     {
         JokerEvents.OnWaveEnd += AddCash;
     }
-    
+
     void AddCash()
     {
         CashEvents.AddCashEvent?.Invoke(cashPerWave);

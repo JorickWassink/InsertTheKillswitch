@@ -1,8 +1,9 @@
+using System;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System;
-using Unity.VisualScripting;
+using UnityEngine.Windows;
 
 public class JokerVisualEdit : MonoBehaviour
 {
@@ -41,6 +42,27 @@ public class JokerVisualEdit : MonoBehaviour
     public void BuyJoker()
     {
         GameObject target = FindAnyObjectByType<JokerHolderObject>().gameObject;
-        joker.joker.Initialize(this);
+        switch (joker.joker)
+        {
+            case JokerEnum.CashPerWave:
+                
+                if(target.GetComponent<CashPerWaveJoker>() == null) target.AddComponent<CashPerWaveJoker>();
+                break;
+            case JokerEnum.BulletRain:
+                if (target.GetComponent<BulletRainJoker>() == null) target.AddComponent<BulletRainJoker>();
+                break;
+            case JokerEnum.AddBurn:
+                if (target.GetComponent<AddBurnJoker>() == null) target.AddComponent<AddBurnJoker>();
+                break;
+            case JokerEnum.AddTazer:
+                if (target.GetComponent<AddTazerJoker>() == null) target.AddComponent<AddTazerJoker>();
+                break;
+            case JokerEnum.AddSlow:
+                if (target.GetComponent<AddSlowJoker>() == null) target.AddComponent<AddSlowJoker>();
+                break;
+            case JokerEnum.RandomEnemyStun:
+                if (target.GetComponent<RandomEnemyStun>() == null) target.AddComponent<RandomEnemyStun>();
+                break;
+        }
     }
 }

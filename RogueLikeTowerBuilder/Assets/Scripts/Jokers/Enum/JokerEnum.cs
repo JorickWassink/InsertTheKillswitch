@@ -6,5 +6,6 @@ public enum JokerEnum
     BulletRain,
     AddBurn,
     AddTazer,
-    AddSlow
+    AddSlow,
+    RandomEnemyStun
 }

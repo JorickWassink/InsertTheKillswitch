@@ -1,10 +1,10 @@
 using UnityEngine;
 
-[System.Serializable]
-public class AddBurnJoker : IJoker
+public class AddBurnJoker : MonoBehaviour, IJoker
 {
 
-    public void Initialize(MonoBehaviour owner)
+
+    private void Start()
     {
         JokerEvents.OnBulletSpawn += AddBulletPerk;
     }

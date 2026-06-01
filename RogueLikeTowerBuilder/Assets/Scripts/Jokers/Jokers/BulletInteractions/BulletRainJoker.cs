@@ -1,9 +1,10 @@
 using UnityEngine;
 
-[System.Serializable]
-public class BulletRainJoker : IJoker
+public class BulletRainJoker : MonoBehaviour, IJoker
 {
-    public void Initialize(MonoBehaviour owner)
+   
+   
+    private void Start()
     {
         JokerEvents.OnEnemyHit += SpawnSkyBullet;
     }
@@ -12,7 +13,7 @@ public class BulletRainJoker : IJoker
     {
         if(Random.Range(0,6) == 0)
         {            
-            GameObject current = Object.Instantiate(bullet, new Vector3(bullet.transform.position.x, bullet.transform.position.y + 5, 0), Quaternion.identity);
+            GameObject current = Instantiate(bullet, new Vector3(bullet.transform.position.x, bullet.transform.position.y + 5, 0), Quaternion.identity);
 
             Rigidbody2D rb = current.GetComponent<Rigidbody2D>();
             rb.AddForce(new Vector2(0,-5), ForceMode2D.Impulse);
