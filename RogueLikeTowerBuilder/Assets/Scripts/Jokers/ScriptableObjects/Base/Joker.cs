@@ -8,6 +8,8 @@ public class Joker : ScriptableObject
 
     public string jokerName = "404";
 
+    public string description = "yep thats a joker";
+
     public Sprite sprite;
 
     public int price = 5;

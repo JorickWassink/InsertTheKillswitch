@@ -21,7 +21,7 @@ public class StoreButtons : MonoBehaviour
     {
         if (target.transform == currentTarget || currentTarget == null) return;
 
-        target.transform.position = Vector3.MoveTowards(target.transform.position, currentTarget.position, .1f);
+        target.transform.position = Vector3.MoveTowards(target.transform.position, currentTarget.position, .2f);
         
     }
 

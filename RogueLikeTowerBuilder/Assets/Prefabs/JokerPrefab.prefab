@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8402551545824111779}
   - component: {fileID: 7719588129237606128}
   - component: {fileID: -7558320105689325247}
+  - component: {fileID: 4212833351135836830}
   m_Layer: 5
   m_Name: JokerPrefab
   m_TagString: Untagged
@@ -90,6 +91,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9263d4b8d6f89254985233328c8898a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  image: {fileID: 4075988131151179506}
+  nameText: {fileID: 5481723006920995534}
+  store: 0
+  priceText: {fileID: 0}
+  joker: {fileID: 0}
+--- !u!114 &4212833351135836830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055384892634117891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4506b0753f77a964598c401127bdcc3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JokerInfoHover
 --- !u!1 &3106607261721960401
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,8 +217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.22, y: 58.7}
-  m_SizeDelta: {x: 131.51, y: 39.32}
+  m_AnchoredPosition: {x: -0.2395, y: 58.7}
+  m_SizeDelta: {x: 167.1728, y: 39.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &140819914962307680
 CanvasRenderer:
@@ -257,7 +275,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.35
+  m_fontSize: 42.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -9,7 +9,7 @@ public class JokerMenuButtons : MonoBehaviour
     Transform currentTarget = null;
     private void Start()
     {
-        target = FindAnyObjectByType<JokerMenu>().gameObject;
+        target = FindAnyObjectByType<JokerManager>().gameObject;
     }
     public void ToggleMenu()
     {
