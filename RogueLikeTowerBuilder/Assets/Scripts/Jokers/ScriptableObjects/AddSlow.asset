@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 4
   jokerName: Goop_Jr
+  description: <b>Every bullet fired</b> will inflict <color=#005500> slow
   sprite: {fileID: 1482950818211161169, guid: 2d2c5f6f08ae6e24890ae4462ef50b8c, type: 3}
   price: 5
   joker: 4

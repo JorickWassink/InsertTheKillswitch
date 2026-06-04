@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 2
   jokerName: (In)Flammable
-  description: yep thats a joker
+  description: <b>Every bullet fired</b> will inflict <color="red"> burn
   sprite: {fileID: 21300000, guid: 630a2128588291b4e8cbd204b7dd1c33, type: 3}
   price: 5
   joker: 2

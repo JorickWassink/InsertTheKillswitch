@@ -47,17 +47,13 @@ public class JokerVisualEdit : MonoBehaviour
         JokerManager.OnAddJoker(joker.joker);
     }
 
-    public void ToggleDescription()
+    public void SetDescription(bool visible)
     {
-        if (descriptionHolder.activeSelf)
-        {
-            descriptionHolder.SetActive(false);
+        if (descriptionHolder == null) return;
+
+        descriptionHolder.SetActive(visible);
+
+        if (visible)
             descriptionText.text = joker.description;
-        }
-        else
-        {
-            descriptionHolder.SetActive(true);
-            
-        }
     }
 }

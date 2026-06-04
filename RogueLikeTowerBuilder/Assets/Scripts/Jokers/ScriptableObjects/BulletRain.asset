@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 1
   jokerName: The_rain_currently_known_as_purple
+  description: <b>On bullet hit</b> <u>10% chance</u> for bullet to duplicate and
+    fall from the sky
   sprite: {fileID: -6830152201372448578, guid: 3cc23b6cd0df9d846b329ce68bad73b1, type: 3}
   price: 5
   joker: 1

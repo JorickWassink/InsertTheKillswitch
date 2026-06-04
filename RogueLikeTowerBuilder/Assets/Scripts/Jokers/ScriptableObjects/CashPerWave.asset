@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 0
   jokerName: Lemonade_Stand
+  description: <b>Every wave</b> gain <u>5</u> cash
   sprite: {fileID: 8868729072188591806, guid: 485b30fd67a032d4dbde89e8c815c2b7, type: 3}
   price: 5
-  joker:
-    rid: 3166812955722383430
-  references:
-    version: 2
-    RefIds:
-    - rid: 3166812955722383430
-      type: {class: CashPerWaveJoker, ns: , asm: Assembly-CSharp}
-      data: 
+  joker: 0

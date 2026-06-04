@@ -5,12 +5,12 @@ public class JokerInfoHover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 {
     public void OnPointerEnter(PointerEventData data)
     {
-        data.pointerEnter.GetComponent<JokerVisualEdit>().ToggleDescription();
+        GetComponent<JokerVisualEdit>().SetDescription(true);
     }
 
     public void OnPointerExit(PointerEventData data)
     {
-        data.pointerEnter.GetComponent<JokerVisualEdit>().ToggleDescription();
+        GetComponent<JokerVisualEdit>().SetDescription(false);
     }
 
 }

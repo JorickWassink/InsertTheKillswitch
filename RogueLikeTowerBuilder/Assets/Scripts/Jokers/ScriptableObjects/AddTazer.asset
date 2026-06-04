@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 3
   jokerName: Queen_95
+  description: <b>Every bullet fired</b> will inflict <color=yellow> stun
   sprite: {fileID: -3070825931381038176, guid: d49f09cd78b106e46b92b07ff785d8e0, type: 3}
   price: 5
   joker: 3
