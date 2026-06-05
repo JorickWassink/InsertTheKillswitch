@@ -15,6 +15,6 @@ MonoBehaviour:
   id: -5
   jokerName: 404
   description: Joker not found
-  sprite: {fileID: -6815037947457610328, guid: 63d3294501329474cb48931e335bca11, type: 3}
+  sprite: {fileID: 21300000, guid: 03c4028a676fe71428f2f76f5d347eab, type: 3}
   price: 0
   joker: 6

@@ -49,22 +49,22 @@ public class JokerManager : MonoBehaviour
         switch (_joker)
         {
             case JokerEnum.CashPerWave:
-                if (target.GetComponent<CashPerWaveJoker>() == null) target.AddComponent<CashPerWaveJoker>();
+                target.AddComponent<CashPerWaveJoker>();
                 break;
             case JokerEnum.BulletRain:
-                if (target.GetComponent<BulletRainJoker>() == null) target.AddComponent<BulletRainJoker>();
+                target.AddComponent<BulletRainJoker>();
                 break;
             case JokerEnum.AddBurn:
-                if (target.GetComponent<AddBurnJoker>() == null) target.AddComponent<AddBurnJoker>();
+                target.AddComponent<AddBurnJoker>();
                 break;
             case JokerEnum.AddTazer:
-                if (target.GetComponent<AddTazerJoker>() == null) target.AddComponent<AddTazerJoker>();
+                target.AddComponent<AddTazerJoker>();
                 break;
             case JokerEnum.AddSlow:
-                if (target.GetComponent<AddSlowJoker>() == null) target.AddComponent<AddSlowJoker>();
+                target.AddComponent<AddSlowJoker>();
                 break;
             case JokerEnum.RandomEnemyStun:
-                if (target.GetComponent<RandomEnemyStun>() == null) target.AddComponent<RandomEnemyStun>();
+                target.AddComponent<RandomEnemyStun>();
                 break;
         }
     }
