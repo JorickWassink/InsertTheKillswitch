@@ -24,7 +24,7 @@ public class JokerVisualEdit : MonoBehaviour
 
     private void Start()
     {
-        descriptionHolder.SetActive(false);
+        if(descriptionHolder != null) descriptionHolder.SetActive(false);
         placeholderJoker = joker;
         if(joker != null) Setinfo();
     }
