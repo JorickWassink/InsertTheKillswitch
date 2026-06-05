@@ -7,5 +7,6 @@ public enum JokerEnum
     AddBurn,
     AddTazer,
     AddSlow,
-    RandomEnemyStun
+    RandomEnemyStun,
+    PLACEHOLDER
 }

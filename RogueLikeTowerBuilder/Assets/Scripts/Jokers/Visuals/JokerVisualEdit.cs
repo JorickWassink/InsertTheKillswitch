@@ -20,10 +20,13 @@ public class JokerVisualEdit : MonoBehaviour
     [SerializeField] public Joker joker;
 
     Joker placeholderJoker;
+    [SerializeField] Joker purchasedJoker;
     [SerializeField] GameObject descriptionHolder;
+    CashManager cash;
 
     private void Start()
     {
+        cash = FindAnyObjectByType<CashManager>();
         if(descriptionHolder != null) descriptionHolder.SetActive(false);
         placeholderJoker = joker;
         if(joker != null) Setinfo();
@@ -40,11 +43,16 @@ public class JokerVisualEdit : MonoBehaviour
         nameText.text = $"{joker.jokerName}.dll";
 
         if (store) priceText.text = Convert.ToString(joker.price);
+        placeholderJoker = joker;
     }
 
     public void BuyJoker()
     {
+        if (joker == purchasedJoker) return;
+        cash.CheckCash(5);
+        CashEvents.RemoveCashEvent(5);
         JokerManager.OnAddJoker(joker.joker);
+        joker = purchasedJoker;
     }
 
     public void SetDescription(bool visible)
