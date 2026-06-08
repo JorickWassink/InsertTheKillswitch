@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class CashManager : MonoBehaviour
     }
     public void AddCash(int _cash)
     {
-        money += _cash;
+        money += Convert.ToInt32(_cash);
         cashNumber.text = money.ToString();
     }
 
