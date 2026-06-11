@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BaseManager : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class BaseManager : MonoBehaviour
     {
         if (health <= 0)
         {
-            print("you lowkey should be dead rn");
+            SceneManager.LoadScene("GameOver");
         }
 
         healthNumber.text = health.ToString();
