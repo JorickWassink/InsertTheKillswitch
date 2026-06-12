@@ -22,16 +22,16 @@ public abstract class BaseShoot : MonoBehaviour, IShootable
     {
         switch (gameObject.GetComponent<BulletEnumHolder>().bullet)
         {
-            case bulletNames.burn:
+            case PerkNames.burnBullet:
                 _bullet.AddComponent<BulletBurn>();
                 break;
-            case bulletNames.tazer:
+            case PerkNames.tazerBullet:
                 _bullet.AddComponent<BulletTazer>();
                 break;
-            case bulletNames.piercing:
+            case PerkNames.piercingBullet:
                 _bullet.AddComponent<BulletPierce>();
                 break;
-            case bulletNames.slow:
+            case PerkNames.slowBullet:
                 _bullet.AddComponent<BulletSlow>();
                 break;
         }

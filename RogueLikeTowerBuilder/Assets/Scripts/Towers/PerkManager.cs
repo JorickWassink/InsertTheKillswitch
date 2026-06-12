@@ -10,56 +10,72 @@ public enum rarities
     epic
 }
 
-public enum shootingNames
-{
-    doubleShot,
-    backShot,
-    machineGun,
-    standard
-}
+//public enum shootingNames
+//{
+//    doubleShot,
+//    backShot,
+//    machineGun,
+//    standard
+//}
 
-public enum bulletNames
-{
-    burn,
-    tazer,
-    piercing,
-    slow
-}
+//public enum bulletNames
+//{
+//    burn,
+//    tazer,
+//    piercing,
+//    slow
+//}
 
-public enum targetNames
+//public enum targetNames
+//{
+//    random,
+//    closest,
+//    first,
+//    strongest
+//}
+
+public enum PerkNames
 {
-    random,
-    closest,
-    first,
-    strongest
+    doubleShooting,
+    backShooting,
+    machineGunShooting,
+    standardShooting,
+    randomTarget,
+    closestTarget,
+    firstTarget,
+    strongestTarget,
+    burnBullet,
+    tazerBullet,
+    piercingBullet,
+    slowBullet
 }
 
 
 public class PerkManager : MonoBehaviour
 {
-    Dictionary<shootingNames, rarities> shootingRarity = new()
+    Dictionary<PerkNames, rarities> shootingRarity = new()
     {
-        { shootingNames.doubleShot, rarities.common },
-        { shootingNames.machineGun, rarities.common },
-        { shootingNames.backShot, rarities.common },
-        { shootingNames.standard, rarities.common },
+        { PerkNames.doubleShooting, rarities.common },
+        { PerkNames.machineGunShooting, rarities.common },
+        { PerkNames.backShooting, rarities.common },
+        { PerkNames.standardShooting, rarities.common },
 
     };
 
-    Dictionary<bulletNames, rarities> bulletRarity = new()
+    Dictionary<PerkNames, rarities> bulletRarity = new()
     {
-        { bulletNames.burn, rarities.common },
-        { bulletNames.tazer, rarities.common },
-        { bulletNames.piercing, rarities.common },
-        { bulletNames.slow, rarities.common }
+        { PerkNames.burnBullet, rarities.common },
+        { PerkNames.tazerBullet, rarities.common },
+        { PerkNames.piercingBullet, rarities.common },
+        { PerkNames.slowBullet, rarities.common }
     };
 
-    Dictionary<targetNames, rarities> targetRarity = new()
+    Dictionary<PerkNames, rarities> targetRarity = new()
     {
-        { targetNames.random, rarities.common },
-        { targetNames.closest, rarities.common },
-        { targetNames.first, rarities.common },
-        { targetNames.strongest, rarities.common }
+        { PerkNames.randomTarget, rarities.common },
+        { PerkNames.closestTarget, rarities.common },
+        { PerkNames.firstTarget, rarities.common },
+        { PerkNames.strongestTarget, rarities.common }
     };
 
     void Start()
@@ -67,42 +83,42 @@ public class PerkManager : MonoBehaviour
         //start of setting shooting perk
         int randomNum = Random.Range(0, shootingRarity.Count);
 
-        List<shootingNames> shootingKeys = new List<shootingNames>(shootingRarity.Keys);
-        shootingNames currentShooting = shootingKeys[randomNum];
+        List<PerkNames> shootingKeys = new List<PerkNames>(shootingRarity.Keys);
+        PerkNames currentShooting = shootingKeys[randomNum];
         SetShootingPerk(currentShooting);
 
         //start of setting bullet perk
         randomNum = Random.Range(0, bulletRarity.Count);
 
-        List<bulletNames> bulletKeys = new List<bulletNames>(bulletRarity.Keys);
-        bulletNames currentBullet = bulletKeys[randomNum];
+        List<PerkNames> bulletKeys = new List<PerkNames>(bulletRarity.Keys);
+        PerkNames currentBullet = bulletKeys[randomNum];
 
         gameObject.GetComponent<BulletEnumHolder>().bullet = currentBullet;
 
         //start of setting targeting perk
         randomNum = Random.Range(0,targetRarity.Count);
 
-        List<targetNames> targetKeys = new List<targetNames>(targetRarity.Keys);
-        targetNames currentTarget = targetKeys[randomNum];
+        List<PerkNames> targetKeys = new List<PerkNames>(targetRarity.Keys);
+        PerkNames currentTarget = targetKeys[randomNum];
         SetTargetPerk(currentTarget);
 
         gameObject.GetComponent<PerkManager>().enabled = false;
     }
 
-    void SetShootingPerk(shootingNames current)
+    void SetShootingPerk(PerkNames current)
     {
         switch (current)
         {
-            case shootingNames.doubleShot:
+            case PerkNames.doubleShooting:
                 gameObject.AddComponent<DoubleShooting>();
                 break;
-            case shootingNames.machineGun:
+            case PerkNames.machineGunShooting:
                 gameObject.AddComponent<MachineGunShoot>();
                 break;
-            case shootingNames.backShot:
+            case PerkNames.backShooting:
                 gameObject.AddComponent<BackShooting>();
                 break;
-            case shootingNames.standard:
+            case PerkNames.standardShooting:
                 gameObject.AddComponent<StandardShoot>();
                 break;
             default:
@@ -111,20 +127,20 @@ public class PerkManager : MonoBehaviour
         }
     }
 
-    void SetTargetPerk(targetNames targetNames)
+    void SetTargetPerk(PerkNames targetNames)
     {
         switch (targetNames)
         {
-            case targetNames.random:
+            case PerkNames.randomTarget:
                 gameObject.AddComponent<RandomTarget>();
                 break;
-            case targetNames.first:
+            case PerkNames.firstTarget:
                 gameObject.AddComponent<FirstTarget>();
                 break;
-            case targetNames.closest:
+            case PerkNames.closestTarget:
                 gameObject.AddComponent<ClosestTarget>();
                 break;
-            case targetNames.strongest:
+            case PerkNames.strongestTarget:
                 gameObject.AddComponent<StrongestTarget>();
                 break;
             default:
