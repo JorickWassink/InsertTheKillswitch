@@ -10,6 +10,7 @@ public class PlaceTower : MonoBehaviour
     CashManager cash;
 
     int towerCost = 5;
+    public PerkNames[] perks;
 
     private void Start()
     {
@@ -29,9 +30,12 @@ public class PlaceTower : MonoBehaviour
         if (cash.CheckCash(towerCost))
         {
             CashEvents.RemoveCashEvent?.Invoke(towerCost);
-            Instantiate(tower, pos, Quaternion.identity, towerParent.transform);
+            GameObject current = Instantiate(tower, pos, Quaternion.identity, towerParent.transform);
+            FindAnyObjectByType<PerkManager>().SetPerks(perks, current);
             this.enabled = false;
             indicator.SetActive(false);
         }
     }
+
+    
 }

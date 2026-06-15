@@ -16,6 +16,7 @@ public class BuildMode : MonoBehaviour
 
     Perk[] GetCurrentPerks(PerkNames[] _perkNames)
     {
+        FindAnyObjectByType<PlaceTower>().perks = _perkNames;
         List<Perk> chosenPerks = new List<Perk>();
         foreach(PerkNames perk in _perkNames)
         {

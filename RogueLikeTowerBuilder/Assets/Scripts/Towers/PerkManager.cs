@@ -109,27 +109,27 @@ public class PerkManager : MonoBehaviour
         return chosenPerks;
         //gameObject.GetComponent<PerkManager>().enabled = false;
     }
-    public void SetPerks(PerkNames[] perks)
+    public void SetPerks(PerkNames[] perks, GameObject obj)
     {
-        SetShootingPerk(perks[0]);
-        SetTargetPerk(perks[1]);
-        //GetComponent<BulletEnumHolder>().bullet = perks[2];
+        SetShootingPerk(perks[0],obj);
+        SetTargetPerk(perks[1], obj);
+        obj.GetComponent<BulletEnumHolder>().bullet = perks[2];
     }
-    void SetShootingPerk(PerkNames current)
+    void SetShootingPerk(PerkNames current, GameObject obj)
     {
         switch (current)
         {
             case PerkNames.doubleShooting:
-                gameObject.AddComponent<DoubleShooting>();
+                obj.AddComponent<DoubleShooting>();
                 break;
             case PerkNames.machineGunShooting:
-                gameObject.AddComponent<MachineGunShoot>();
+                obj.AddComponent<MachineGunShoot>();
                 break;
             case PerkNames.backShooting:
-                gameObject.AddComponent<BackShooting>();
+                obj.AddComponent<BackShooting>();
                 break;
             case PerkNames.standardShooting:
-                gameObject.AddComponent<StandardShoot>();
+                obj.AddComponent<StandardShoot>();
                 break;
             default:
                 print("SOMETHING went wrong and i dont know what PLEASE help me");
@@ -137,21 +137,21 @@ public class PerkManager : MonoBehaviour
         }
     }
 
-    void SetTargetPerk(PerkNames targetNames)
+    void SetTargetPerk(PerkNames targetNames, GameObject obj)
     {
         switch (targetNames)
         {
             case PerkNames.randomTarget:
-                gameObject.AddComponent<RandomTarget>();
+                obj.AddComponent<RandomTarget>();
                 break;
             case PerkNames.firstTarget:
-                gameObject.AddComponent<FirstTarget>();
+                obj.AddComponent<FirstTarget>();
                 break;
             case PerkNames.closestTarget:
-                gameObject.AddComponent<ClosestTarget>();
+                obj.AddComponent<ClosestTarget>();
                 break;
             case PerkNames.strongestTarget:
-                gameObject.AddComponent<StrongestTarget>();
+                obj.AddComponent<StrongestTarget>();
                 break;
             default:
                 print("SOMETHING went wrong and i dont know what PLEASE help me");
