@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 10
   sprite: {fileID: 0}
-  perkName: bullet_pierce
+  perkName: pierce
   description: bullets now pierce through enemies

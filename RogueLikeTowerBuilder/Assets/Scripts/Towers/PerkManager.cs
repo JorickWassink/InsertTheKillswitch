@@ -78,14 +78,16 @@ public class PerkManager : MonoBehaviour
         { PerkNames.strongestTarget, rarities.common }
     };
 
-    void Start()
+
+    public PerkNames[] RunPerks()
     {
         //start of setting shooting perk
         int randomNum = Random.Range(0, shootingRarity.Count);
 
         List<PerkNames> shootingKeys = new List<PerkNames>(shootingRarity.Keys);
         PerkNames currentShooting = shootingKeys[randomNum];
-        SetShootingPerk(currentShooting);
+
+        //SetShootingPerk(currentShooting);
 
         //start of setting bullet perk
         randomNum = Random.Range(0, bulletRarity.Count);
@@ -93,18 +95,26 @@ public class PerkManager : MonoBehaviour
         List<PerkNames> bulletKeys = new List<PerkNames>(bulletRarity.Keys);
         PerkNames currentBullet = bulletKeys[randomNum];
 
-        gameObject.GetComponent<BulletEnumHolder>().bullet = currentBullet;
+        //gameObject.GetComponent<BulletEnumHolder>().bullet = currentBullet;
 
         //start of setting targeting perk
         randomNum = Random.Range(0,targetRarity.Count);
 
         List<PerkNames> targetKeys = new List<PerkNames>(targetRarity.Keys);
         PerkNames currentTarget = targetKeys[randomNum];
-        SetTargetPerk(currentTarget);
 
-        gameObject.GetComponent<PerkManager>().enabled = false;
+        //SetTargetPerk(currentTarget);
+
+        PerkNames[] chosenPerks = {currentShooting, currentTarget, currentBullet};
+        return chosenPerks;
+        //gameObject.GetComponent<PerkManager>().enabled = false;
     }
-
+    public void SetPerks(PerkNames[] perks)
+    {
+        SetShootingPerk(perks[0]);
+        SetTargetPerk(perks[1]);
+        //GetComponent<BulletEnumHolder>().bullet = perks[2];
+    }
     void SetShootingPerk(PerkNames current)
     {
         switch (current)

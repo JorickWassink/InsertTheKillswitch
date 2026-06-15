@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8752221596220811441}
   - component: {fileID: 9165150492724251165}
   - component: {fileID: -3066290527569250849}
-  - component: {fileID: -2323115886405392712}
   - component: {fileID: 4553449350035840565}
   - component: {fileID: 7470900053444322279}
   m_Layer: 0
@@ -114,18 +113,6 @@ MonoBehaviour:
   hits: []
   arrowIcon: {fileID: 0}
   orbitRadius: 1.2
---- !u!114 &-2323115886405392712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2846227873956561075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc4791b7dc342b4fb30fa6fc1258016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PerkManager
 --- !u!114 &4553449350035840565
 MonoBehaviour:
   m_ObjectHideFlags: 0

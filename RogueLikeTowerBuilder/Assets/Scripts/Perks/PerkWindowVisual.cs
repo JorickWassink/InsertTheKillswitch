@@ -6,7 +6,7 @@ public class PerkWindowVisual : MonoBehaviour
     /// Send through in order: shooting, targeting, bullet.
     /// </summary>
     /// <param name="perks"></param>
-    public void Initialize(PerkNames[] perks)
+    public void Initialize(Perk[] perks)
     {
         PerkVisual[] children = transform.GetComponentsInChildren<PerkVisual>();
 
@@ -14,5 +14,10 @@ public class PerkWindowVisual : MonoBehaviour
         {
             children[i].perk = perks[i];
         }
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
 }

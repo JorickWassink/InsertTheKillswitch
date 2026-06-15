@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 11
   sprite: {fileID: 0}
-  perkName: bullet_slow
+  perkName: slow
   description: enemies hit are inflicted with<color=#005500> slow
