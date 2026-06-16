@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class BuildMode : MonoBehaviour
 {
@@ -7,10 +7,18 @@ public class BuildMode : MonoBehaviour
     [SerializeField] GameObject PerkWindow;
 
     public List<Perk> perks = new List<Perk>();
-    
+    CashManager cash;
+    int towerCost = 5;
+
+    private void Start()
+    {
+        cash = FindAnyObjectByType<CashManager>();
+    }
     public void EnableBuildMode()
     {
-        PerkWindow.SetActive(true);        
+        if (!cash.CheckCash(towerCost)) return;
+        CashEvents.RemoveCashEvent?.Invoke(towerCost);
+        PerkWindow.SetActive(true);
         PerkWindow.GetComponent<PerkWindowVisual>().Initialize(GetCurrentPerks(FindAnyObjectByType<PerkManager>().RunPerks()));
     }
 
@@ -18,9 +26,9 @@ public class BuildMode : MonoBehaviour
     {
         FindAnyObjectByType<PlaceTower>().perks = _perkNames;
         List<Perk> chosenPerks = new List<Perk>();
-        foreach(PerkNames perk in _perkNames)
+        foreach (PerkNames perk in _perkNames)
         {
-            for(int i = 0; i < perks.Count; i++)
+            for (int i = 0; i < perks.Count; i++)
             {
                 if (perk == perks[i].perk) chosenPerks.Add(perks[i]);
             }

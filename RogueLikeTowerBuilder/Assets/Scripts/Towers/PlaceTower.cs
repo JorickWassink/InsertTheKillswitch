@@ -9,13 +9,11 @@ public class PlaceTower : MonoBehaviour
 
     CashManager cash;
 
-    int towerCost = 5;
     public PerkNames[] perks;
 
     private void Start()
     {
         InputManager.PlaceTower += Place;
-        cash = FindAnyObjectByType<CashManager>();
     }
 
     void Place(Vector2 pos)
@@ -27,15 +25,14 @@ public class PlaceTower : MonoBehaviour
         if (hit != null && hit.isTrigger && hit.TryGetComponent<Road>(out _))
             return;
 
-        if (cash.CheckCash(towerCost))
-        {
-            CashEvents.RemoveCashEvent?.Invoke(towerCost);
-            GameObject current = Instantiate(tower, pos, Quaternion.identity, towerParent.transform);
-            FindAnyObjectByType<PerkManager>().SetPerks(perks, current);
-            this.enabled = false;
-            indicator.SetActive(false);
-        }
+
+
+        GameObject current = Instantiate(tower, pos, Quaternion.identity, towerParent.transform);
+        FindAnyObjectByType<PerkManager>().SetPerks(perks, current);
+        this.enabled = false;
+        indicator.SetActive(false);
+
     }
 
-    
+
 }
