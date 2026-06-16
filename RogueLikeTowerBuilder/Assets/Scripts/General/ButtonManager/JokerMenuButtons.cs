@@ -6,7 +6,7 @@ public class JokerMenuButtons : MonoBehaviour
 
     public void ToggleMenu()
     {
-        if (target.activeSelf) target.GetComponent<UIPopIn>().PlayOut();
-        else target.SetActive(true);
+        if (target.GetComponent<UIPopInOffscreen>().IsOnScreen) target.GetComponent<UIPopInOffscreen>().PlayOut();
+        else target.GetComponent<UIPopInOffscreen>().PlayIn();
     }
 }

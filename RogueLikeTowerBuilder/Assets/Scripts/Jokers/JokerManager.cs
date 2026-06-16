@@ -6,8 +6,8 @@ public class JokerManager : MonoBehaviour
 {
     public static Action<JokerEnum> OnAddJoker;
 
-    [SerializeField] Transform columnOne;
-    [SerializeField] Transform columnTwo;
+    [SerializeField] Transform jokerContainer;
+
     [SerializeField] GameObject jokerPrefab;
     [SerializeField] List<Joker> scrObjects = new List<Joker>();
 
@@ -17,21 +17,46 @@ public class JokerManager : MonoBehaviour
         OnAddJoker += OrderJokers;
     }
 
+    List<JokerVisualEdit> jokerVisuals = new List<JokerVisualEdit>();
+    int currentJokerIndex = 0;
+
     void OrderJokers(JokerEnum _joker)
     {
         Joker current = CheckObject(_joker);
         if (current == null) return;
-        if (jokerCount % 2 == 1 || jokerCount == 0)
-        {
-            Instantiate(jokerPrefab, columnOne).GetComponent<JokerVisualEdit>().joker = current;
-        }
-        else
-        {
-            Instantiate(jokerPrefab, columnTwo).GetComponent<JokerVisualEdit>().joker = current;
-        }
+
+        JokerVisualEdit newVisual = Instantiate(jokerPrefab, jokerContainer).GetComponent<JokerVisualEdit>();
+        newVisual.joker = current;
+        jokerVisuals.Add(newVisual);
+
         BuyJoker(_joker);
 
         jokerCount++;
+
+        currentJokerIndex = jokerVisuals.Count - 1;
+        UpdateJokerVisibility();
+    }
+
+    void UpdateJokerVisibility()
+    {
+        for (int i = 0; i < jokerVisuals.Count; i++)
+        {
+            jokerVisuals[i].gameObject.SetActive(i == currentJokerIndex);
+        }
+    }
+
+    public void NextJoker()
+    {
+        if (jokerVisuals.Count == 0) return;
+        currentJokerIndex = (currentJokerIndex + 1) % jokerVisuals.Count;
+        UpdateJokerVisibility();
+    }
+
+    public void PreviousJoker()
+    {
+        if (jokerVisuals.Count == 0) return;
+        currentJokerIndex = (currentJokerIndex - 1 + jokerVisuals.Count) % jokerVisuals.Count;
+        UpdateJokerVisibility();
     }
 
     Joker CheckObject(JokerEnum _joker)
