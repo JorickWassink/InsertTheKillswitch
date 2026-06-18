@@ -39,6 +39,10 @@ public class JokerVisualEdit : MonoBehaviour
 
     void Setinfo()
     {
+        Material instanceMaterial = new Material(image.material);
+        image.material = instanceMaterial;
+        instanceMaterial.SetTexture("_Texture", joker.sprite.texture);
+
         image.sprite = joker.sprite;
         nameText.text = $"{joker.jokerName}.dll";
 

@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   jokerContainer: {fileID: 1113158245}
-  jokerPrefab: {fileID: 4821568372615011446, guid: f4e90514002afb54e80af430858365a3, type: 3}
+  jokerPrefab: {fileID: 8574096588025896406, guid: 8d5d10aded4220244ad9b2edaa9d729d, type: 3}
   scrObjects:
   - {fileID: 11400000, guid: ee6162caa90229c479d1e6e1a00290f4, type: 2}
   - {fileID: 11400000, guid: 1b12af66f943afc4cbc3206e8c1627d4, type: 2}
@@ -9325,6 +9325,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 75.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4075988131151179506, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
     - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_fontSize
       value: 44.9
@@ -10705,7 +10709,7 @@ PrefabInstance:
     - target: {fileID: 4075988131151179506, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
     - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_fontSize
       value: 44.9
@@ -13153,6 +13157,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 76.2
       objectReference: {fileID: 0}
+    - target: {fileID: 4075988131151179506, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075988131151179506, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
     - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_fontSize
       value: 44.9
