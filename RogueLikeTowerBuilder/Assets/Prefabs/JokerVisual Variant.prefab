@@ -657,8 +657,20 @@ PrefabInstance:
       value: JokerVisual Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2442003820187797339, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 353.2418
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442003820187797339, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.2253
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442003820187797339, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 84.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_fontSize
+      value: 44.9
       objectReference: {fileID: 0}
     - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_fontColor.b
@@ -676,13 +688,17 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5481723006920995534, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7164883219701809369, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -294
+      value: 279
       objectReference: {fileID: 0}
     - target: {fileID: 7164883219701809369, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7719588129237606128, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       propertyPath: m_Sprite
@@ -698,8 +714,45 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1129123573361653225, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6581653475188319548}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2055384892634117891, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5466335300181792704}
+    - targetCorrespondingSourceObject: {fileID: 2055384892634117891, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7424285939421312631}
   m_SourcePrefab: {fileID: 100100000, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+--- !u!1 &4821568372615011446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055384892634117891, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
+  m_PrefabInstance: {fileID: 6804823898007333749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5466335300181792704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4821568372615011446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4564791230f604989383d12e92f50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIFollowMouse
+--- !u!114 &-7424285939421312631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4821568372615011446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67ef0067a14bb941a71f5eef724495c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIPopIn
+  duration: 0.3
+  playOnEnable: 1
 --- !u!224 &5892085589534924444 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1129123573361653225, guid: cfd43cb1bf8d8ef42b60b0185be437f2, type: 3}
