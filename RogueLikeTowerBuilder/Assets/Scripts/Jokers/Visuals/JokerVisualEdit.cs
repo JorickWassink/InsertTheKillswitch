@@ -53,7 +53,7 @@ public class JokerVisualEdit : MonoBehaviour
     public void BuyJoker()
     {
         if (joker == purchasedJoker) return;
-        cash.CheckCash(5);
+        if (!cash.CheckCash(5)) return;
         CashEvents.RemoveCashEvent(5);
         JokerManager.OnAddJoker(joker.joker);
         joker = purchasedJoker;

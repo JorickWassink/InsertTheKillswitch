@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveManager : MonoBehaviour
 {
@@ -24,6 +25,15 @@ public class WaveManager : MonoBehaviour
             if(currentWave != 1) JokerEvents.OnWaveEnd?.Invoke();
             StartWave();
         }
+
+        if (currentWave >= 25) SceneManager.LoadScene("WinScreen");
+
+        waveNumber.text = $"{currentWave}/25";
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Print)) currentWave++;
     }
     bool found = false;
     void StartWave()
@@ -32,8 +42,7 @@ public class WaveManager : MonoBehaviour
         GameObject spawnable = null;
 
         int spaceIndicator = 1;
-
-        waveNumber.text = Convert.ToString(currentWave);
+        
         do
         {
             do
