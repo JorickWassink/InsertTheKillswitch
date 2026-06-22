@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         JokerEvents.OnBulletSpawn?.Invoke(gameObject);
-        damage += EventHandler.bulletSpawnReturn?.Invoke(gameObject) ?? 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

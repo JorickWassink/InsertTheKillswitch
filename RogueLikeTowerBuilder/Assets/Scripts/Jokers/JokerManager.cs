@@ -94,6 +94,9 @@ public class JokerManager : MonoBehaviour
             case JokerEnum.SimpleTim:
                 target.AddComponent<SimpleTim>();
                 break;
+            case JokerEnum.BonziBuddy:
+                target.AddComponent<BonziBuddy>();
+                break;
         }
     }
 }

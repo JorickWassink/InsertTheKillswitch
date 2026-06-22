@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class BaseShoot : MonoBehaviour, IShootable
 {
-    public float damage = 1;
+    public float damage { get; set; } = 1;
     public float bulletSpeed = 5;
     public virtual void Shoot(Vector3 target)
     {

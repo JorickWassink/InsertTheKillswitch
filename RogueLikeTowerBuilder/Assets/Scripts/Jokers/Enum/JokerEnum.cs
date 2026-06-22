@@ -9,5 +9,6 @@ public enum JokerEnum
     AddSlow,
     RandomEnemyStun,
     SimpleTim,
+    BonziBuddy,
     PLACEHOLDER
 }

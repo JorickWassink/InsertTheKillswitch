@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede2e562c5dc7dd4986a5ae70722a073, type: 3}
+  m_Name: BonziBuddy
+  m_EditorClassIdentifier: Assembly-CSharp::Joker
+  id: 7
+  jokerName: Legally_Distinct_Monkey
+  description: Increase damage by <u>1</u> <b>every wave passed</b> increase by <u>1</u>
+  sprite: {fileID: 7927559359753461234, guid: ab0e3af6d2cc4db44a4bbaed12bc8573, type: 3}
+  price: 5
+  joker: 7

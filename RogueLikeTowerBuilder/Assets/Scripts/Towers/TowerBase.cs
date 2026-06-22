@@ -6,7 +6,7 @@ public class TowerBase : MonoBehaviour
     [Header("Stats")]
     public float range = 5;
     public float attackSpeed = 1;
-
+    float baseDamage;
 
     [Header("References")]
     public GameObject bullet;
@@ -25,9 +25,18 @@ public class TowerBase : MonoBehaviour
         StartCoroutine(GetInterfaces());
 
         arrowIcon = GetComponentInChildren<TowerIndicator>().gameObject.transform;
+
+        baseDamage = gameObject.GetComponent<IShootable>().damage;
+
+        JokerEvents.OnJokerRefresh += UpdateDamage;
+        JokerEvents.OnJokerRefresh?.Invoke();
     }
 
-    
+    void UpdateDamage()
+    {
+        gameObject.GetComponent<IShootable>().damage = baseDamage;
+        gameObject.GetComponent<IShootable>().damage += EventHandler.towerSpawnReturn?.Invoke(gameObject) ?? 0;
+    }
 
     public void RotateTowards(Vector3 targetPos)
     {
