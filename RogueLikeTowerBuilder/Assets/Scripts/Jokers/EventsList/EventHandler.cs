@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class EventHandler : MonoBehaviour
 {
-    public static JokerEvents.OnEnemyHitReturn enemyHitReturn = null;
-    public static float number;
+    public static JokerEvents.OnBulletSpawnReturn bulletSpawnReturn;
+    EventHandlerDTO handlerDto;
     private void Awake()
     {
-        JokerEvents.OnEnemyHitReturn enemyHitReturn = null;
-        enemyHitReturn += EventReturnHandler;
+        handlerDto = new EventHandlerDTO();
+
+        bulletSpawnReturn += EventReturnHandler;
     }
 
-    float EventReturnHandler()
+    float EventReturnHandler(GameObject obj)
     {
-        return 0;
+        JokerEvents.OnBulletSpawnINC?.Invoke(handlerDto);
+        return handlerDto.number;
     }
 }

@@ -8,5 +8,6 @@ public enum JokerEnum
     AddTazer,
     AddSlow,
     RandomEnemyStun,
+    SimpleTim,
     PLACEHOLDER
 }

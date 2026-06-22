@@ -91,6 +91,9 @@ public class JokerManager : MonoBehaviour
             case JokerEnum.RandomEnemyStun:
                 target.AddComponent<RandomEnemyStun>();
                 break;
+            case JokerEnum.SimpleTim:
+                target.AddComponent<SimpleTim>();
+                break;
         }
     }
 }
