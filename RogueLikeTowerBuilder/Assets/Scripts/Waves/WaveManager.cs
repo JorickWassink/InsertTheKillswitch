@@ -60,7 +60,7 @@ public class WaveManager : MonoBehaviour
             found = false;
 
             GameObject currentEnemy = Instantiate(spawnable, new Vector2(parent.position.x - spaceIndicator * spaceBetween, parent.position.y), Quaternion.identity, parent);
-            currentEnemy.GetComponent<Enemy>().hp = currentWave * currentEnemy.GetComponent<Enemy>().hp;
+            currentEnemy.GetComponent<Enemy>().hp = currentEnemy.GetComponent<Enemy>().hp * (currentWave * 1.15f);
             spaceIndicator++;
 
         } while (currency != 0);
