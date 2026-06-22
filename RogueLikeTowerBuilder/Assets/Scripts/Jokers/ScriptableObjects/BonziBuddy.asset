@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Joker
   id: 7
   jokerName: Legally_Distinct_Monkey
-  description: Increase damage by <u>1</u> <b>every wave passed</b> increase by <u>1</u>
-  sprite: {fileID: 7927559359753461234, guid: ab0e3af6d2cc4db44a4bbaed12bc8573, type: 3}
+  description: Increase damage by <u>1</u> <b>every wave passed</b> increase by <u>0.1</u>
+  sprite: {fileID: 2783378320578298397, guid: 037324f1cd840cc4dafa222e3158a957, type: 3}
   price: 5
   joker: 7
