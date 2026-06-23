@@ -13,6 +13,7 @@ public class EventHandler : MonoBehaviour
 
     float EventReturnHandler(GameObject obj)
     {
+        handlerDto.number = 0;
         JokerEvents.OnTowerSpawnINC?.Invoke(handlerDto);
         return handlerDto.number;
     }

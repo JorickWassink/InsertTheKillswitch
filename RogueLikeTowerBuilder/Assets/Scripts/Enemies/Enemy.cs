@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour, IDamagable, ISlowable
 
     void IDamagable.TakeDamage(float damage, Color color)
     {
+        print("damage" + damage);
         hp -= damage;
         DamagePopUp(damage, color);
 

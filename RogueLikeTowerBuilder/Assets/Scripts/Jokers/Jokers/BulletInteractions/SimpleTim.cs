@@ -5,10 +5,10 @@ public class SimpleTim : MonoBehaviour, IJoker
     
     void Start()
     {
-        JokerEvents.OnJokerRefresh?.Invoke();
         JokerEvents.OnTowerSpawnINC += Effect;
+        JokerEvents.OnJokerRefresh?.Invoke();
     }
-    
+
     void Effect(EventHandlerDTO handlerDto)
     {
         handlerDto.number += 2;
