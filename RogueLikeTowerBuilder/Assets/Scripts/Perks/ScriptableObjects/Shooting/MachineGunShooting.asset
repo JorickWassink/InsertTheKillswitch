@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MachineGunShooting
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 2
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 3657cb1c56148874fb04b141fd2c7471, type: 3}
   perkName: machine_gun
   description: Shoots a lot more bullets

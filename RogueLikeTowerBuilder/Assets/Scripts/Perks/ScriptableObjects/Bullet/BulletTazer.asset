@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BulletTazer
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 9
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ee5d7aae8bade784bbbe4bbe80fd4a48, type: 3}
   perkName: tazer
   description: enemies hit will be inflicted with<color=yellow> stun

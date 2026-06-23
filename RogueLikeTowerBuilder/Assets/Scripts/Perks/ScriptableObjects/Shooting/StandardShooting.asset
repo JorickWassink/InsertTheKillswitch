@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: StandardShooting
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 3
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: dbc3abf64e3f9e942a069f3f551c10cb, type: 3}
   perkName: standard_shooting
   description: Nothing special to see here

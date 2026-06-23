@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RandomTarget
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 4
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 12bf2c925cec04c4da2668ddb3a4e4d4, type: 3}
   perkName: random_target
   description: Targets a random enemy in range

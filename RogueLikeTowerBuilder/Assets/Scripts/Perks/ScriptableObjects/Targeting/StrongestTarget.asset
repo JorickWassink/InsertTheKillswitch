@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: StrongestTarget
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 7
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1e6a08f5a48466c438fd125109550f56, type: 3}
   perkName: strongest_target
   description: Targets the strongest enemy in range

@@ -8072,7 +8072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8122,9 +8122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a4d52ff9c7edb439b6f953a073cb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PerkVisual
+  image: {fileID: 1158748526}
   nameText: {fileID: 651183364}
   descriptionText: {fileID: 1950050650}
-  perk: {fileID: 11400000, guid: 8db2ca019c82c2443917a4325118e039, type: 2}
+  perk: {fileID: 0}
   descriptionHolder: {fileID: 466530597}
 --- !u!1 &1161484935
 GameObject:
@@ -11733,7 +11734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11771,9 +11772,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a4d52ff9c7edb439b6f953a073cb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  image: {fileID: 1655617584}
   nameText: {fileID: 1028660290}
   descriptionText: {fileID: 407268584}
-  perk: {fileID: 11400000, guid: 3fd585743521e2e40ac177e0f62d54dd, type: 2}
+  perk: {fileID: 0}
   descriptionHolder: {fileID: 832628225}
 --- !u!114 &1655617587
 MonoBehaviour:
@@ -13652,7 +13654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: ae25c34e31a174a43badd46e386db928, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13690,9 +13692,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a4d52ff9c7edb439b6f953a073cb08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PerkVisual
+  image: {fileID: 1876436249}
   nameText: {fileID: 950349998}
   descriptionText: {fileID: 464576457}
-  perk: {fileID: 11400000, guid: 75efa6f35fc9a13439b8396f91170067, type: 2}
+  perk: {fileID: 0}
   descriptionHolder: {fileID: 368941859}
 --- !u!114 &1876436252
 MonoBehaviour:

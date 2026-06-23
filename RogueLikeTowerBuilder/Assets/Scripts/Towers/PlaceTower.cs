@@ -39,7 +39,6 @@ public class PlaceTower : MonoBehaviour
         if(_hit == null) return false;
         if(_hit.TryGetComponent<Road>(out _)) return true;
         if(_hit.TryGetComponent<UIElement>(out _)) return true;
-        if(_hit.TryGetComponent<TowerBase>(out _)) return true;
 
         return false;
     }

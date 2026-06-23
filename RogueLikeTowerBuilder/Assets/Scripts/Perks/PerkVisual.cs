@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PerkVisual : MonoBehaviour
 {
+    [SerializeField] Image image;
     [SerializeField] TMP_Text nameText;
     [SerializeField] TMP_Text descriptionText;
 
@@ -11,9 +12,13 @@ public class PerkVisual : MonoBehaviour
     [SerializeField] GameObject descriptionHolder;
     public void Initialize()
     {
-        if (perk == null) return;
+        if (perk.sprite == null) return;
 
-        gameObject.GetComponent<Image>().sprite = perk.sprite;
+        Material instanceMaterial = new Material(image.material);
+        image.material = instanceMaterial;
+        instanceMaterial.SetTexture("_Texture", perk.sprite.texture);
+
+        image.sprite = perk.sprite;
     }
 
     public void SetDescriptionInfo(bool visible)
@@ -28,5 +33,10 @@ public class PerkVisual : MonoBehaviour
             nameText.text = perk.perkName;
         }
 
+    }
+
+    private void OnEnable()
+    {
+        Invoke("Initialize", .1f);
     }
 }

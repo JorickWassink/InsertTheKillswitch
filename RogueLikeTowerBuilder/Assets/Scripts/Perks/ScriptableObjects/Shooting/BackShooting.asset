@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BackShooting
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 12d2ff1d22752a34cbecff6065055bfc, type: 3}
   perkName: back_shooting
   description: Also fires a bullet behind the tower

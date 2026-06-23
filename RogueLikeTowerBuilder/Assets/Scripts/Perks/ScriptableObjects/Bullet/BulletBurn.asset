@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BulletBurn
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 8
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1a764023939049445b7424de1b886b6b, type: 3}
   perkName: burn
   description: enemies hit will be inflicted with<color="red"> burn

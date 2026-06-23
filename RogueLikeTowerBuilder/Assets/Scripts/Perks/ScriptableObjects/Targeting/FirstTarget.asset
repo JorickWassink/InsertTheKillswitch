@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FirstTarget
   m_EditorClassIdentifier: Assembly-CSharp::Perk
   perk: 6
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b07e63492ac07b040bf06ba52ce7e1a6, type: 3}
   perkName: first_target
   description: Targets the first enemy in range
