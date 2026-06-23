@@ -22,8 +22,8 @@ public class PlaceTower : MonoBehaviour
 
         Collider2D hit = Physics2D.OverlapPoint(pos);
 
-        if (hit != null && hit.isTrigger && hit.TryGetComponent<Road>(out _))
-            return;
+        if (CheckPlace(hit)) return;
+
 
 
 
@@ -32,6 +32,16 @@ public class PlaceTower : MonoBehaviour
         this.enabled = false;
         indicator.SetActive(false);
 
+    }
+
+    bool CheckPlace(Collider2D _hit)
+    {
+        if(_hit == null) return false;
+        if(_hit.TryGetComponent<Road>(out _)) return true;
+        if(_hit.TryGetComponent<UIElement>(out _)) return true;
+        if(_hit.TryGetComponent<TowerBase>(out _)) return true;
+
+        return false;
     }
 
 
