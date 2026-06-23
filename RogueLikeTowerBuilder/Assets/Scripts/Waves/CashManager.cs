@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CashManager : MonoBehaviour
 {
-    int money = 5000;
+    int money = 5;
     [SerializeField] TMP_Text cashNumber;
 
     private void Start()
